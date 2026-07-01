@@ -1,5 +1,12 @@
 # ArcProgressView
 
+A Jetpack Compose arc/gauge progress indicator — a segmented gauge with a gradient sweep of
+radial ticks, a faint full-sweep track, and an optional label/status pair around the value (e.g.
+a battery readout with an offline status).
+
+Inspired by [SemiCircleProgress](https://github.com/BlackFlagBin/SemiCircleProgress) (a classic
+View-based semicircle progress widget), rebuilt from scratch for Jetpack Compose with a different,
+segmented visual style.
 
 <img src="screenshots/demo.png" alt="ArcProgressView demo — plain and labeled gauge cards" width="360" />
 
@@ -32,13 +39,24 @@
 
 ## Installation
 
-This library isn't published to a Maven repository yet. To use it, include the `:library` module
-directly in your project:
+### Maven Central
+
+```kotlin
+// app/build.gradle.kts
+dependencies {
+    implementation("io.github.mirza-adil:arcprogressview:1.0.0")
+}
+```
+
+> Publishing is configured (see `library/build.gradle.kts`) but the first release hasn't been
+> pushed to Maven Central yet. Until then, use the local module include below.
+
+### Local module (until the first release is published)
 
 ```kotlin
 // settings.gradle.kts
 include(":library")
-project(":library").projectDir = file("path/to/CustomArc/library")
+project(":library").projectDir = file("path/to/ArcProgressView/library")
 ```
 
 ```kotlin
@@ -108,6 +126,13 @@ ArcProgressView(
 
 Run the `:app` module for an interactive playground: progress slider, color palette picker,
 typography picker, dynamic card color/size, and a horizontally scrollable list of gauges.
+
+## License
+
+```
+Apache License, Version 2.0 — see LICENSE for the full text.
+Copyright 2026 Mirza Adil
+```
 
 ## Author
 
