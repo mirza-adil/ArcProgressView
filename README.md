@@ -8,6 +8,8 @@ Inspired by [SemiCircleProgress](https://github.com/BlackFlagBin/SemiCircleProgr
 View-based semicircle progress widget), rebuilt from scratch for Jetpack Compose with a different,
 segmented visual style.
 
+<img src="screenshots/demo.png" alt="ArcProgressView demo — plain and labeled gauge cards" width="360" />
+
 ## Features
 
 - Pure Compose `Canvas` drawing — no `View`/XML, no custom view inflation.
