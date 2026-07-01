@@ -1,12 +1,5 @@
-# CustomArc
+# ArcProgressView
 
-A Jetpack Compose arc/gauge progress indicator — a segmented gauge with a gradient sweep of
-radial ticks, a faint full-sweep track, and an optional label/status pair around the value (e.g.
-a battery readout with an offline status).
-
-Inspired by [SemiCircleProgress](https://github.com/BlackFlagBin/SemiCircleProgress) (a classic
-View-based semicircle progress widget), rebuilt from scratch for Jetpack Compose with a different,
-segmented visual style.
 
 ## Features
 
